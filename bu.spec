@@ -10,22 +10,21 @@ URL:		http://www.advancedresearch.org/bu/
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%description 
-This is a small but very configurable incremental backup tool
-written in Unix shell script.  It is designed to backup files
-to other file systems as opposed to backing up to tape. It is 
-very simple  to  use, yet  has many features one would expect
-from  a  sophisticated backup tool, such  as  nice  logs, and
-include and exclude file filters with wild card capability.
+%description
+This is a small but very configurable incremental backup tool written
+in Unix shell script. It is designed to backup files to other file
+systems as opposed to backing up to tape. It is very simple to use,
+yet has many features one would expect from a sophisticated backup
+tool, such as nice logs, and include and exclude file filters with
+wild card capability.
 
 %description -l pl
-Jest to ma³e, ale o du¿ych mo¿liwo¶ciach konfiguracyjnych
-narzêdzie do backup'u napisane jako skrypt shell'owy. Zosta³o 
-stworzone do backup'u plików na inne sytemy jak na ta¶mê. Jest
-bardzo proste w u¿ytkowaniu, pomimo i¿ ma wiele mo¿liwo¶ci, 
-których mo¿na oczekiwaæ po rozbudowanym programie tego typu,
-takich jak przyjemne logi, includowanie i excludowanie plików
-przy zastosowaniu masek.
+Jest to ma³e, ale o du¿ych mo¿liwo¶ciach konfiguracyjnych narzêdzie do
+backup'u napisane jako skrypt shell'owy. Zosta³o stworzone do backup'u
+plików na inne sytemy jak na ta¶mê. Jest bardzo proste w u¿ytkowaniu,
+pomimo i¿ ma wiele mo¿liwo¶ci, których mo¿na oczekiwaæ po rozbudowanym
+programie tego typu, takich jak przyjemne logi, includowanie i
+excludowanie plików przy zastosowaniu masek.
 
 %prep
 %setup -q
