@@ -5,8 +5,8 @@ Version:	2.8
 Release:	1
 License:	BSD
 Group:		Networking/Utilities
-Source0:	http://www.advancedresearch.org/bu/%{name}-%{version}.tar.gz
-URL:		http://www.advancedresearch.org/bu/
+Source0:	http://www.hightek.org/bu/download/%{name}-%{version}.tar.gz
+URL:		http://hightek.org/bu/
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -29,8 +29,6 @@ excludowanie plików przy zastosowaniu masek.
 %prep
 %setup -q
 
-%build
-
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}
@@ -49,4 +47,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc *.gz
 %attr(755,root,root) %{_bindir}/bu
-%{_var}/backups/bu/*
+%{_var}/backups/bu
