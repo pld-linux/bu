@@ -38,13 +38,11 @@ install -d $RPM_BUILD_ROOT%{_var}/backups/bu
 cp bu $RPM_BUILD_ROOT%{_bindir}
 cp Include Exclude $RPM_BUILD_ROOT%{_var}/backups/bu
 
-gzip -9nf Changelog README white_paper
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc Changelog README white_paper
 %attr(755,root,root) %{_bindir}/bu
 %{_var}/backups/bu
