@@ -46,4 +46,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Changelog README white_paper
 %attr(755,root,root) %{_bindir}/bu
+%dir %{_var}/backups
 %{_var}/backups/bu
