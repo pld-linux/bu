@@ -21,7 +21,7 @@ wild card capability.
 %description -l pl
 Jest to ma³e, ale o du¿ych mo¿liwo¶ciach konfiguracyjnych narzêdzie do
 backup'u napisane jako skrypt shell'owy. Zosta³o stworzone do backup'u
-plików na inne sytemy jak na ta¶mê. Jest bardzo proste w u¿ytkowaniu,
+plików na inne systemy jak na ta¶mê. Jest bardzo proste w u¿ytkowaniu,
 pomimo i¿ ma wiele mo¿liwo¶ci, których mo¿na oczekiwaæ po rozbudowanym
 programie tego typu, takich jak przyjemne logi, includowanie i
 excludowanie plików przy zastosowaniu masek.
