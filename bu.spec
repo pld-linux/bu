@@ -1,5 +1,5 @@
 Summary:	bu - Incremental NFS BackUp tool
-Summary(pl):	bu - System backup'u inkrementalnego po NFS'ie
+Summary(pl):	bu - system przyrostowych kopii zapasowych po NFS-ie
 Name:		bu
 Version:	2.8
 Release:	1
@@ -8,6 +8,8 @@ Group:		Networking/Utilities
 Source0:	http://www.hightek.org/bu/download/%{name}-%{version}.tar.gz
 # Source0-md5:	4f4e81c3a983e93f50c3b9a2991066dc
 URL:		http://hightek.org/bu/
+# /var/backups cannot be used arbitrary by new applications
+BuildRequires:	FHS-fix
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -21,11 +23,11 @@ wild card capability.
 
 %description -l pl
 Jest to ma³e, ale o du¿ych mo¿liwo¶ciach konfiguracyjnych narzêdzie do
-backup'u napisane jako skrypt shell'owy. Zosta³o stworzone do backup'u
-plików na inne systemy jak na ta¶mê. Jest bardzo proste w u¿ytkowaniu,
-pomimo i¿ ma wiele mo¿liwo¶ci, których mo¿na oczekiwaæ po rozbudowanym
-programie tego typu, takich jak przyjemne logi, includowanie i
-excludowanie plików przy zastosowaniu masek.
+kopii zapasowych napisane jako skrypt pow³oki. Zosta³o stworzone do
+tworzenia kopii zapasowych plików na inne systemy jak na ta¶mê. Jest
+bardzo proste w u¿ytkowaniu, pomimo i¿ ma wiele mo¿liwo¶ci, których
+mo¿na oczekiwaæ po rozbudowanym programie tego typu, takich jak
+przyjemne logi, w³±czanie i wy³±czanie plików przy zastosowaniu masek.
 
 %prep
 %setup -q
@@ -34,7 +36,6 @@ excludowanie plików przy zastosowaniu masek.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}
 install -d $RPM_BUILD_ROOT%{_var}/backups/bu
-
 
 cp bu $RPM_BUILD_ROOT%{_bindir}
 cp Include Exclude $RPM_BUILD_ROOT%{_var}/backups/bu
