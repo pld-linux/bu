@@ -6,6 +6,7 @@ Release:	1
 License:	BSD
 Group:		Networking/Utilities
 Source0:	http://www.hightek.org/bu/download/%{name}-%{version}.tar.gz
+# Source0-md5:	4f4e81c3a983e93f50c3b9a2991066dc
 URL:		http://hightek.org/bu/
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
