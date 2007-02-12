@@ -1,5 +1,5 @@
 Summary:	bu - Incremental NFS BackUp tool
-Summary(pl.UTF-8):   bu - system przyrostowych kopii zapasowych po NFS-ie
+Summary(pl.UTF-8):	bu - system przyrostowych kopii zapasowych po NFS-ie
 Name:		bu
 Version:	2.8
 Release:	1
