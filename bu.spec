@@ -1,5 +1,5 @@
 Summary:	bu - Incremental NFS BackUp tool
-Summary(pl):	bu - system przyrostowych kopii zapasowych po NFS-ie
+Summary(pl.UTF-8):   bu - system przyrostowych kopii zapasowych po NFS-ie
 Name:		bu
 Version:	2.8
 Release:	1
@@ -21,13 +21,13 @@ yet has many features one would expect from a sophisticated backup
 tool, such as nice logs, and include and exclude file filters with
 wild card capability.
 
-%description -l pl
-Jest to ma≥e, ale o duøych moøliwo∂ciach konfiguracyjnych narzÍdzie do
-kopii zapasowych napisane jako skrypt pow≥oki. Zosta≥o stworzone do
-tworzenia kopii zapasowych plikÛw na inne systemy jak na ta∂mÍ. Jest
-bardzo proste w uøytkowaniu, pomimo iø ma wiele moøliwo∂ci, ktÛrych
-moøna oczekiwaÊ po rozbudowanym programie tego typu, takich jak
-przyjemne logi, w≥±czanie i wy≥±czanie plikÛw przy zastosowaniu masek.
+%description -l pl.UTF-8
+Jest to ma≈Çe, ale o du≈ºych mo≈ºliwo≈õciach konfiguracyjnych narzƒôdzie do
+kopii zapasowych napisane jako skrypt pow≈Çoki. Zosta≈Ço stworzone do
+tworzenia kopii zapasowych plik√≥w na inne systemy jak na ta≈õmƒô. Jest
+bardzo proste w u≈ºytkowaniu, pomimo i≈º ma wiele mo≈ºliwo≈õci, kt√≥rych
+mo≈ºna oczekiwaƒá po rozbudowanym programie tego typu, takich jak
+przyjemne logi, w≈ÇƒÖczanie i wy≈ÇƒÖczanie plik√≥w przy zastosowaniu masek.
 
 %prep
 %setup -q
